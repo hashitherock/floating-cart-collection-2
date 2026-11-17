@@ -3,6 +3,7 @@
 - [ ] Finish the eight new premium animated luxe designs (32 total) and verify.
 - [x] Use the shared reference-style shopping bag icon consistently across carts and cart controls.
 - [x] Keep the live cart preview in a fixed, bounded width and height.
+- [ ] Standardize the width and height of every design card's Live preview control and preview stage.
 - [ ] Audit CSS: remove duplicates/conflicts, verify responsive breakpoints 320-1440px+, no overflow.
 - [ ] Test all designs: badge counts, add-to-cart, hover/touch, animations, no console errors.
 
