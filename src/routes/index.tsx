@@ -1,11 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from 'react';
-import { ArrowUpRight, Bookmark, Check, Minus, Monitor, Plus, ShoppingBag, Smartphone } from 'lucide-react';
+import { ArrowUpRight, Bookmark, Check, Minus, Monitor, Plus, Smartphone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { CartDesignCard } from '@/components/cart-design-card';
 import { FloatingCart } from '@/components/floating-cart';
 import { ShoppingCartDrawer } from '@/components/shopping-cart-drawer';
+import { ShoppingBagIcon } from '@/components/shopping-bag-icon';
 import { cartDesigns, changeCartQuantity, formatPrice, initialCartCount, sampleProduct, type CartStyle } from '@/lib/cart-collection';
 import sneaker from '@/assets/everyday-sneaker.jpg';
 
@@ -63,7 +64,7 @@ function Index() {
           <div className="header-end">
             <span className="collection-label">DESIGN EXPLORATION / 2026</span>
             <Tooltip>
-              <TooltipTrigger asChild><Button variant="outline" size="icon" className="size-8 border-border text-primary" aria-label="Open your shopping cart" onClick={() => setCartOpen(true)}><ShoppingBag /></Button></TooltipTrigger>
+              <TooltipTrigger asChild><Button variant="outline" size="icon" className="size-8 border-border text-primary" aria-label="Open your shopping cart" onClick={() => setCartOpen(true)}><ShoppingBagIcon /></Button></TooltipTrigger>
               <TooltipContent>Shopping cart · {count} items</TooltipContent>
             </Tooltip>
           </div>
