@@ -2,7 +2,6 @@ import { ChevronRight, ShoppingBag } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { cartTotal, formatPrice, type CartStyle } from '@/lib/cart-collection';
-import cartSculpture from '@/assets/cart-sculpture.png';
 import { cn } from '@/lib/utils';
 
 interface FloatingCartProps {
@@ -167,9 +166,7 @@ export function FloatingCart({ style, count, animationKey, onOpen, label = 'Open
           aria-label={`${label}, ${items}`}
           onClick={onOpen}
         >
-          {isDetailed ? renderDetailedCart() : style === 'three-dimensional' ? (
-            <img className="cart-sculpture" src={cartSculpture} alt="" width={1024} height={1024} loading="lazy" />
-          ) : <Glyph className="cart-glyph" aria-hidden="true" />}
+          {isDetailed ? renderDetailedCart() : <Glyph className="cart-glyph" aria-hidden="true" />}
           {style === 'capsule' && <span className="capsule-label">My cart</span>}
           <span className={cn('cart-badge', animationKey > 0 && 'badge-pulse')} aria-hidden="true">{count}</span>
         </Button>

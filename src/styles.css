@@ -481,8 +481,9 @@
 .cart-commerce svg.cart-glyph { width: 29px; height: 29px; }
 .cart-pulse { animation: cart-bump 420ms ease-out; }
 .cart-badge.badge-pulse { animation: badge-bump 420ms ease-out; }
-.live-float { position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 30; }
+.live-float { position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 30; display: flex; width: 88px; height: 116px; align-items: center; justify-content: center; }
 .live-float .floating-cart { width: 60px; height: 60px; }
+.live-float .floating-cart { max-width: 100%; max-height: 100%; }
 .live-float .cart-three-dimensional { width: 75px; height: 75px; }
 .live-float .cart-commerce { height: 65px; }
 .live-float .cart-signature-stack { width: 83px; height: 102px; }
