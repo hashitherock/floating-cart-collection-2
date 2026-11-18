@@ -4,7 +4,7 @@
 - [x] Use the shared reference-style shopping bag icon consistently across carts and cart controls.
 - [x] Keep the live cart preview in a fixed, bounded width and height.
 - [x] Standardize the width and height of every design card's Live preview control and preview stage.
-- [ ] Audit CSS: remove duplicates/conflicts, verify responsive breakpoints 320-1440px+, no overflow.
+- [x] Audit CSS: remove duplicates/conflicts, verify responsive breakpoints 320-1920px, no horizontal overflow; use single-column gallery below 420px.
 - [ ] Test all designs: badge counts, add-to-cart, hover/touch, animations, no console errors.
 
 - [x] Add eight new premium floating-cart designs and verify gallery, live cart, and tests.
